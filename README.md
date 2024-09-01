@@ -1,8 +1,8 @@
-# 🖥️ Raspberry Pi MQTT Dashboard
+# 🖥️ Integrated Data Transmission System: Raspberry Pi and STM32 Nucleo for MQTT, I2C, and UART Communication with Accelerometer Integration
 
 ## Overview
 
-This project demonstrates the integration of a Raspberry Pi 4 with an MQTT broker ([ThingsBoard platform](https://thingsboard.io/)) to monitor system resources and sensor data. The system retrieves data from UART-connected devices and internal Raspberry Pi metrics (CPU, RAM, Disk usage, etc.), visualizing it through a customizable dashboard on ThingsBoard. Additionally, an RPC (Remote Procedure Call) mechanism is implemented to trigger specific actions on the Raspberry Pi remotely.
+This project integrates a Raspberry Pi with an STM32 Nucleo board to collect and transmit data. The Raspberry Pi runs a Python script to gather data from the STM32 via UART and monitor internal metrics. Accelerometer data is transmitted using I2C and sent to the ThingsBoard platform via MQTT for real-time analysis. A JSON configuration file creates a dynamic dashboard on ThingsBoard, while a Plane Data Environment (PDE) file visualizes the plane’s tilt based on accelerometer data. This project showcases effective use of UART, I2C, and MQTT for comprehensive data monitoring and visualization.
 
 ## Project Structure
 
@@ -11,6 +11,7 @@ This project demonstrates the integration of a Raspberry Pi 4 with an MQTT broke
 - **[`pi4_dashboard_mqtt.json`](pi4_dashboard_mqtt.json)**: 📊 JSON configuration file for setting up the ThingsBoard dashboard. This file defines the widgets and data sources used to display real-time data on the dashboard, including CPU usage, RAM usage, accelerometer data, and more.
 
 - **[`acc_ADXL.pde`](acc_ADXL.pde)**: ✈️ Processing script that visualizes the orientation of a plane in real-time based on accelerometer data. This script communicates with the Raspberry Pi, receiving data via MQTT and updating the plane's orientation accordingly.
+- **[`adxl345-driver-stm32`](https://github.com/WassimHedfi/adxl345-driver-stm32)**: 📂 Contains the STM32 driver code for the ADXL345 accelerometer. This code is responsible for interfacing with the accelerometer and transmitting data via I2C. The driver code is included in the repository to facilitate integration and communication with the STM32 board.
 
 ## Features
 
