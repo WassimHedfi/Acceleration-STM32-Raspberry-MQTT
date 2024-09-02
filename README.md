@@ -6,11 +6,11 @@ This project integrates a Raspberry Pi with an STM32 Nucleo board to collect and
 
 ## Project Structure
 
-- **[`main_py_sendUARTdata.py`](main_py_sendUARTdata.py)**: 🐍 Python script responsible for reading data from the UART interface and sending it to the MQTT broker. The script also gathers system metrics such as CPU usage, memory usage, and disk space, publishing them to the MQTT broker for real-time monitoring.
+- **[`main_py_sendUARTdata.py`](onRaspberryPi_running_scripts/main_py_MQTTsend_UARTdata.py)**: 🐍 Python script responsible for reading data from the UART interface and sending it to the MQTT broker. The script also gathers system metrics such as CPU usage, memory usage, and disk space, publishing them to the MQTT broker for real-time monitoring.
   
-- **[`pi4_dashboard_mqtt.json`](pi4_dashboard_mqtt.json)**: 📊 JSON configuration file for setting up the ThingsBoard dashboard. This file defines the widgets and data sources used to display real-time data on the dashboard, including CPU usage, RAM usage, accelerometer data, and more.
+- **[`pi4_dashboard_mqtt.json`](theThingsBoard_Dashboard/pi4_dashboard_mqtt.json)**: 📊 JSON configuration file for setting up the ThingsBoard dashboard. This file defines the widgets and data sources used to display real-time data on the dashboard, including CPU usage, RAM usage, accelerometer data, and more.
 
-- **[`acc_ADXL.pde`](acc_ADXL.pde)**: ✈️ Processing script that visualizes the orientation of a plane in real-time based on accelerometer data. This script communicates with the Raspberry Pi, receiving data via MQTT and updating the plane's orientation accordingly.
+- **[`acc_ADXL.pde`](onRaspberryPi_running_scripts/acc_ADXL.pde)**: ✈️ Processing script that visualizes the orientation of a plane in real-time based on accelerometer data. This script communicates with the Raspberry Pi, receiving data via MQTT and updating the plane's orientation accordingly.
 - **[`adxl345-driver-stm32`](https://github.com/WassimHedfi/adxl345-driver-stm32)**: 📂 Contains the STM32 driver code for the ADXL345 accelerometer. This code is responsible for interfacing with the accelerometer and transmitting data via I2C. The driver code is included in the repository to facilitate integration and communication with the STM32 board.
 
 ## Features
