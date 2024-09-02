@@ -1,4 +1,4 @@
-# 🖥️ Integrated Data Transmission System: Raspberry Pi and STM32 Nucleo for MQTT, I2C, and UART Communication with Accelerometer Integration
+# 🖥️ Integrated Data Transmission System: STM32 Nucleo with i2c and UART drivers and Raspberry Pi for MQTT Communication with Accelerometer (adxl345) Integration
 
 ## Overview
 
