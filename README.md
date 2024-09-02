@@ -31,6 +31,15 @@ This project integrates a Raspberry Pi with an STM32 Nucleo board to collect and
 - UART-connected device for accelerometer data (or similar).
 - Access to a ThingsBoard server with MQTT broker capabilities.
 - [Processing IDE](https://processing.org/download/) for running the [`acc_ADXL.pde`](onRaspberryPi_running_scripts/acc_ADXL.pde) script.
+  <p align="center">
+  <img src="Figures/adxl345.png" alt="First Image" width="190"/>
+  <img src="Figures/stm32f446re_nucleo.png" alt="Third Image" width="150"/>
+  <img src="Figures/raspberry pi 4b+.png" alt="Second Image" width="200"/>
+  <img src="Figures/thingsboard.png" alt="Third Image" width="200"/>
+    <img src="Figures/Processing-Logo.png" alt="Third Image" width="200"/>
+    
+</p>
+
 
 ### Setup Instructions
 
