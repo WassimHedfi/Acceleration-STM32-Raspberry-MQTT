@@ -17,11 +17,11 @@ This project integrates a Raspberry Pi with an STM32 Nucleo board to collect and
 
 1. **Real-Time Monitoring**: ⏱️ The system monitors various system metrics (CPU, RAM, disk usage) and accelerometer data, publishing it to the MQTT broker for real-time visualization on the ThingsBoard dashboard.
 
-2. **Customizable Dashboard**: 🛠️ The [`pi4_dashboard_mqtt.json`](pi4_dashboard_mqtt.json) file provides a pre-configured dashboard that includes widgets for visualizing system metrics and sensor data. Users can easily customize this dashboard according to their requirements; either by editing the json file, or graphically on theThingsBoard plateform.
+2. **Customizable Dashboard**: 🛠️ The [`pi4_dashboard_mqtt.json`](theThingsBoard_Dashboard/pi4_dashboard_mqtt.json) file provides a pre-configured dashboard that includes widgets for visualizing system metrics and sensor data. Users can easily customize this dashboard according to their requirements; either by editing the json file, or graphically on theThingsBoard plateform.
 
 3. **Remote Procedure Call (RPC)**: 📡 The project includes an RPC mechanism allowing remote triggering of specific actions on the Raspberry Pi, such as forcing the retrieval of telemetry data.
 
-4. **3D Visualization**: 🎨 The [`acc_ADXL.pde`](acc_ADXL.pde) script offers a 3D visualization of the plane’s orientation based on real-time accelerometer data, providing a graphical representation of the sensor's output.
+4. **3D Visualization**: 🎨 The [`acc_ADXL.pde`](onRaspberryPi_running_scripts/acc_ADXL.pde) script offers a 3D visualization of the plane’s orientation based on real-time accelerometer data, providing a graphical representation of the sensor's output.
 
 ## Getting Started
 
@@ -30,7 +30,7 @@ This project integrates a Raspberry Pi with an STM32 Nucleo board to collect and
 - Raspberry Pi 4 with Python installed.
 - UART-connected device for accelerometer data (or similar).
 - Access to a ThingsBoard server with MQTT broker capabilities.
-- [Processing IDE](https://processing.org/download/) for running the [`acc_ADXL.pde`](acc_ADXL.pde) script.
+- [Processing IDE](https://processing.org/download/) for running the [`acc_ADXL.pde`](onRaspberryPi_running_scripts/acc_ADXL.pde) script.
 
 ### Setup Instructions
 
