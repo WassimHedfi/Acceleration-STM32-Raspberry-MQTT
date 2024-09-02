@@ -1,6 +1,13 @@
 You can find the STM32 Nucleo code, which is ready to be integrated after configuration on STM32CubeIDE, in the GitHub repository: [ADXL345 Driver for STM32](https://github.com/WassimHedfi/adxl345-driver-stm32).
 
 This project utilizes the [STM32nucleoF446RE](https://www.st.com/en/microcontrollers-microprocessors/stm32f446re.html) development board. The repository includes the UART driver for data transmission and the I2C driver for interfacing with the ADXL345 accelerometer.
+ <p align="center">
+  <img src="Figures/adxl345.png" alt="First Image" width="190"/>
+  <img src="Figures/stm32f446re_nucleo.png" alt="Third Image" width="150"/>
+    <img src="Figures/stm32cubeide.png" alt="Third Image" width="200"/>
+    
+</p>
+
 
 The `main.c` file provides a fully functional implementation of these drivers, ensuring reliable data transmission.
 
