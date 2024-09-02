@@ -17,7 +17,7 @@ This project integrates a Raspberry Pi with an STM32 Nucleo board to collect and
 
 1. **Real-Time Monitoring**: ⏱️ The system monitors various system metrics (CPU, RAM, disk usage) and accelerometer data, publishing it to the MQTT broker for real-time visualization on the ThingsBoard dashboard.
 
-2. **Customizable Dashboard**: 🛠️ The [`pi4_dashboard_mqtt.json`](pi4_dashboard_mqtt.json) file provides a pre-configured dashboard that includes widgets for visualizing system metrics and sensor data. Users can easily customize this dashboard according to their requirements.
+2. **Customizable Dashboard**: 🛠️ The [`pi4_dashboard_mqtt.json`](pi4_dashboard_mqtt.json) file provides a pre-configured dashboard that includes widgets for visualizing system metrics and sensor data. Users can easily customize this dashboard according to their requirements; either by editing the json file, or graphically on theThingsBoard plateform.
 
 3. **Remote Procedure Call (RPC)**: 📡 The project includes an RPC mechanism allowing remote triggering of specific actions on the Raspberry Pi, such as forcing the retrieval of telemetry data.
 
